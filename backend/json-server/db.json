@@ -1,0 +1,290 @@
+{
+  "orders": [
+    {
+      "id": "01",
+      "instrument": "PETR4",
+      "side": "Compra",
+      "price": "51.00",
+      "quantity": "20",
+      "remainingQuantity": "0",
+      "status": "Parcial",
+      "createdAt": "2025-07-05T09:30:00.000Z",
+      "updatedAt": "2025-07-10T23:06:43.760Z",
+      "userId": "joao123"
+    },
+    {
+      "id": "02",
+      "instrument": "PETR4",
+      "side": "Compra",
+      "price": "50.00",
+      "quantity": "10",
+      "remainingQuantity": "10",
+      "status": "Aberta",
+      "createdAt": "2025-07-05T09:45:00.000Z",
+      "updatedAt": "2025-07-05T09:45:00.000Z",
+      "userId": "felipe369"
+    },
+    {
+      "id": "03",
+      "instrument": "PETR4",
+      "side": "Venda",
+      "price": "49.00",
+      "quantity": "5",
+      "remainingQuantity": "0",
+      "status": "Executada",
+      "createdAt": "2025-07-05T10:15:00.000Z",
+      "updatedAt": "2025-07-05T10:15:00.000Z",
+      "userId": "maria789"
+    },
+    {
+      "id": "04",
+      "instrument": "VALE3",
+      "side": "Compra",
+      "price": "85.50",
+      "quantity": "30",
+      "remainingQuantity": "30",
+      "status": "Cancelada",
+      "createdAt": "2025-07-05T11:00:00.000Z",
+      "updatedAt": "2025-07-08T20:50:11.586Z",
+      "userId": "carlos101"
+    },
+    {
+      "id": "05",
+      "instrument": "VALE3",
+      "side": "Venda",
+      "price": "86.00",
+      "quantity": "25",
+      "remainingQuantity": "25",
+      "status": "Aberta",
+      "createdAt": "2025-07-05T11:10:00.000Z",
+      "updatedAt": "2025-07-05T11:10:00.000Z",
+      "userId": "ana202"
+    },
+    {
+      "id": "06",
+      "instrument": "ITUB4",
+      "side": "Compra",
+      "price": "32.75",
+      "quantity": "50",
+      "remainingQuantity": "0",
+      "status": "Executada",
+      "createdAt": "2025-07-05T08:30:00.000Z",
+      "updatedAt": "2025-07-05T09:00:00.000Z",
+      "userId": "pedro303"
+    },
+    {
+      "id": "07",
+      "instrument": "ITUB4",
+      "side": "Venda",
+      "price": "32.75",
+      "quantity": "50",
+      "remainingQuantity": "0",
+      "status": "Executada",
+      "createdAt": "2025-07-05T09:00:00.000Z",
+      "updatedAt": "2025-07-05T09:00:00.000Z",
+      "userId": "lucia404"
+    },
+    {
+      "id": "08",
+      "instrument": "BBDC4",
+      "side": "Compra",
+      "price": "25.30",
+      "quantity": "100",
+      "remainingQuantity": "70",
+      "status": "Parcial",
+      "createdAt": "2025-07-05T14:20:00.000Z",
+      "updatedAt": "2025-07-05T15:30:00.000Z",
+      "userId": "ricardo505"
+    },
+    {
+      "id": "09",
+      "instrument": "BBDC4",
+      "side": "Venda",
+      "price": "25.30",
+      "quantity": "30",
+      "remainingQuantity": "0",
+      "status": "Executada",
+      "createdAt": "2025-07-06T15:30:00.000Z",
+      "updatedAt": "2025-07-06T15:30:00.000Z",
+      "userId": "fernanda606"
+    },
+    {
+      "id": "10",
+      "instrument": "PETR4",
+      "side": "Venda",
+      "price": "52.00",
+      "quantity": "15",
+      "remainingQuantity": "15",
+      "status": "Cancelada",
+      "createdAt": "2025-07-06T12:00:00.000Z",
+      "updatedAt": "2025-07-06T13:00:00.000Z",
+      "userId": "gustavo707"
+    },
+    {
+      "id": "11",
+      "instrument": "VALE3",
+      "side": "Compra",
+      "price": "84.00",
+      "quantity": "40",
+      "remainingQuantity": "40",
+      "status": "Aberta",
+      "createdAt": "2025-07-07T16:00:00.000Z",
+      "updatedAt": "2025-07-07T16:00:00.000Z",
+      "userId": "beatriz808"
+    },
+    {
+      "id": "12",
+      "instrument": "ITUB4",
+      "side": "Compra",
+      "price": "33.00",
+      "quantity": "25",
+      "remainingQuantity": "25",
+      "status": "Aberta",
+      "createdAt": "2025-07-09T16:30:00.000Z",
+      "updatedAt": "2025-07-09T16:30:00.000Z",
+      "userId": "antonio909"
+    }
+  ],
+  "orderStatusHistory": [
+    {
+      "id": "1",
+      "orderId": "01",
+      "status": "Aberta",
+      "timestamp": "2025-07-05T09:30:00.000Z"
+    },
+    {
+      "id": "2",
+      "orderId": "01",
+      "status": "Parcial",
+      "timestamp": "2025-07-05T10:15:00.000Z"
+    },
+    {
+      "id": "3",
+      "orderId": "02",
+      "status": "Aberta",
+      "timestamp": "2025-07-05T09:45:00.000Z"
+    },
+    {
+      "id": "4",
+      "orderId": "03",
+      "status": "Aberta",
+      "timestamp": "2025-07-05T10:15:00.000Z"
+    },
+    {
+      "id": "5",
+      "orderId": "03",
+      "status": "Executada",
+      "timestamp": "2025-07-05T10:15:00.000Z"
+    },
+    {
+      "id": "6",
+      "orderId": "04",
+      "status": "Aberta",
+      "timestamp": "2025-07-05T11:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "orderId": "05",
+      "status": "Aberta",
+      "timestamp": "2025-07-05T11:10:00.000Z"
+    },
+    {
+      "id": "8",
+      "orderId": "06",
+      "status": "Aberta",
+      "timestamp": "2025-07-05T08:30:00.000Z"
+    },
+    {
+      "id": "9",
+      "orderId": "06",
+      "status": "Executada",
+      "timestamp": "2025-07-05T09:00:00.000Z"
+    },
+    {
+      "id": "10",
+      "orderId": "07",
+      "status": "Aberta",
+      "timestamp": "2025-07-05T09:00:00.000Z"
+    },
+    {
+      "id": "11",
+      "orderId": "07",
+      "status": "Executada",
+      "timestamp": "2025-07-05T09:00:00.000Z"
+    },
+    {
+      "id": "12",
+      "orderId": "08",
+      "status": "Aberta",
+      "timestamp": "2025-07-05T14:20:00.000Z"
+    },
+    {
+      "id": "13",
+      "orderId": "08",
+      "status": "Parcial",
+      "timestamp": "2025-07-05T15:30:00.000Z"
+    },
+    {
+      "id": "14",
+      "orderId": "09",
+      "status": "Aberta",
+      "timestamp": "2025-07-05T15:30:00.000Z"
+    },
+    {
+      "id": "15",
+      "orderId": "09",
+      "status": "Executada",
+      "timestamp": "2025-07-05T15:30:00.000Z"
+    },
+    {
+      "id": "16",
+      "orderId": "10",
+      "status": "Aberta",
+      "timestamp": "2025-07-05T12:00:00.000Z"
+    },
+    {
+      "id": "17",
+      "orderId": "10",
+      "status": "Cancelada",
+      "timestamp": "2025-07-05T13:00:00.000Z"
+    },
+    {
+      "id": "18",
+      "orderId": "11",
+      "status": "Aberta",
+      "timestamp": "2025-07-05T16:00:00.000Z"
+    },
+    {
+      "id": "19",
+      "orderId": "12",
+      "status": "Aberta",
+      "timestamp": "2025-07-05T16:30:00.000Z"
+    }
+  ],
+  "trades": [
+    {
+      "id": "1",
+      "buyingOrderId": "01",
+      "sellingOrderId": "03",
+      "quantity": "5",
+      "price": "51.00",
+      "timestamp": "2025-07-05T10:15:00.000Z"
+    },
+    {
+      "id": "2",
+      "buyingOrderId": "06",
+      "sellingOrderId": "07",
+      "quantity": "50",
+      "price": "32.75",
+      "timestamp": "2025-07-05T09:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "buyingOrderId": "08",
+      "sellingOrderId": "09",
+      "quantity": "30",
+      "price": "25.30",
+      "timestamp": "2025-07-05T15:30:00.000Z"
+    }
+  ]
+}
