@@ -9,6 +9,42 @@ O repositório está organizado em duas pastas principais:
 - `backend/`: Contém o arquivo `db.json` que simula uma API RESTful utilizando o **JSON Server**.
 - `frontend/`: A aplicação principal construída com **React** e **TypeScript**.
 
+## ▶️ Como Executar o Projeto
+
+Siga os passos abaixo para executar a aplicação localmente.
+
+**1. Backend (API Simulada)**
+
+O backend utiliza o `json-server` para simular uma API RESTful.
+
+- Navegue até o diretório do backend:
+  ```bash
+  cd backend/json-server
+  ```
+- Inicie o servidor:
+  ```bash
+  npx json-server --watch db.json --port 3000
+  ```
+  O servidor estará disponível em `http://localhost:3000`.
+
+**2. Frontend (Aplicação React)**
+
+O frontend é uma aplicação React construída com Vite.
+
+- Navegue até o diretório do frontend:
+  ```bash
+  cd frontend/base-trade
+  ```
+- Instale as dependências:
+  ```bash
+  pnpm install
+  ```
+- Inicie o servidor de desenvolvimento:
+  ```bash
+  pnpm dev
+  ```
+  A aplicação estará disponível em `http://localhost:5173` (ou outra porta indicada pelo Vite).
+
 ## 🛠️ Stack de Tecnologias (Frontend)
 
 A seleção de tecnologias visou a criação de uma aplicação moderna, performática e de fácil manutenção.
@@ -61,7 +97,7 @@ Quando uma nova ordem é criada, a API busca por ordens de contraparte compatív
 
 ## ✅ Testes Automatizados
 
-Foram criados exemplos de testes automatizados para demonstrar a abordagem de qualidade e garantir o funcionamento correto de componentes e hooks críticos. _(Nota: Os arquivos de teste serão incluídos no commit final no repositório Git)._
+Foram criados exemplos de testes automatizados para demonstrar a abordagem de qualidade e garantir o funcionamento correto de componentes e hooks críticos.
 
 ## ⚠️ Limitações Conhecidas
 
@@ -75,5 +111,4 @@ Esta é uma lista de funcionalidades e melhorias que poderiam ser implementadas 
 - **Autenticação de Usuário:** Implementar um sistema de login para que cada usuário possa ver e gerenciar apenas suas próprias ordens, além de visualizar seu balanço financeiro.
 - **Componente de "Order Book":** Desenvolver uma visualização de "livro de ofertas" mais tradicional, mostrando as listas de ordens de compra e venda de forma organizada por preço.
 - **Atualizações em Tempo Real com WebSockets:** Integrar WebSockets para que as atualizações de status das ordens e novos negócios sejam refletidos na tela instantaneamente, sem a necessidade de revalidações manuais.
-- **Testes de Integração e E2E:** Expandir a cobertura de testes com testes de integração e ponta a ponta (end-to-end) usando ferramentas como **Cypress** ou **Playwright**.
 - **Refinamento da UI/UX:** Adicionar mais feedback visual, como "flashes" em tabelas quando os dados são atualizados, para melhorar a percepção do usuário sobre as mudanças.

@@ -61,7 +61,33 @@ Quando uma nova ordem é criada, a API busca por ordens de contraparte compatív
 
 ## ✅ Testes Automatizados
 
-Foram criados exemplos de testes automatizados para demonstrar a abordagem de qualidade e garantir o funcionamento correto de componentes e hooks críticos. _(Nota: Os arquivos de teste serão incluídos no commit final no repositório Git)._
+Para garantir a qualidade e a robustez da aplicação, foram implementados testes automatizados utilizando **Vitest** e **React Testing Library**. A abordagem de teste inclui:
+
+- **Testes Unitários e de Integração de Componentes:** Verificam o comportamento de componentes individuais e sua interação, como a renderização correta baseada em props, a interação do usuário (cliques, preenchimento de formulários) e a chamada de funções de callback.
+- **Mocking de Hooks e API:**
+  - **Hooks:** O `vi.mock` do Vitest é usado para isolar componentes de seus hooks de dependência, permitindo testar a lógica do componente de forma independente.
+  - **API:** O **Mock Service Worker (MSW)** é utilizado para interceptar chamadas de API, simulando respostas do servidor (sucesso e erro) sem a necessidade de um backend real em execução durante os testes.
+
+Exemplos de testes criados incluem:
+
+1.  **`ThemeToggle.test.tsx`**: Um teste simples que mocka o hook `useTheme` para verificar se o componente renderiza o ícone correto (sol/lua) e se a função de troca de tema é chamada no clique.
+2.  **`OrderForm.test.tsx`**: Um teste de integração mais complexo que simula o fluxo completo de criação de uma ordem:
+    - O usuário preenche o formulário.
+    - Validações de campos são testadas.
+    - A submissão do formulário é simulada.
+    - O teste verifica se a API (mockada pelo MSW) foi chamada corretamente e se a notificação de sucesso é exibida.
+
+## ⚡ Como Executar os Testes
+
+Para rodar a suíte de testes, utilize os seguintes comandos na pasta `frontend/base-trade`:
+
+```bash
+# Executa os testes no modo "watch" (interativo)
+pnpm test
+
+# Executa os testes uma vez e gera um relatório de cobertura
+pnpm coverage
+```
 
 ## ⚠️ Limitações Conhecidas
 
